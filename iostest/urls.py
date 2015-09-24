@@ -18,5 +18,5 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^mobtick/', include(mobtick.site.urls))
+    url(r'^$', 'mobtick.views.home', name='home'),
 ]
